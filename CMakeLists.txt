@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.18)
 
 # Specify the project info.
 
-project(convert  LANGUAGES C)
+project(ex615_c_001  LANGUAGES C)
 
 message(STATUS "Current OS          \t: ${CMAKE_SYSTEM_NAME}")
 message(STATUS "Host system         \t: ${CMAKE_HOST_SYSTEM_PROCESSOR}")
@@ -19,7 +19,10 @@ add_executable(${PROJECT_NAME}
     src/convert.c
     inc/convert.h
 	
-	main_convert.c
+    src/print_size.c
+    inc/print_size.h
+
+	main_01.c
 )
 
 # Configure the directories to search for header files.
